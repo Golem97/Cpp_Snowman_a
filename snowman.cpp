@@ -14,8 +14,8 @@ X(TTT)Y
 ARGS STRUCTUR : HNLRXYTB
 ================================================================
 */
-#include <iostream>
 #include "snowman.hpp"
+#include <iostream>
 #include <array>
 #include <string>
 #include <exception>
@@ -60,6 +60,7 @@ namespace ariel
 
             //Empty, Dot ,Bigger Dot, Biggest Dot, Closed
             const array<string, 5> left_Eye = {"", ".", "o", "O", "-"};
+
             
             //Empty,  Normal Arm,  Upwards Arm, Downwards Arm, None
             const array<string, 5> high_Left = {"", " ", "\\", " ", " "};
@@ -82,11 +83,12 @@ namespace ariel
             //Constuction of the return ans with peek each value in corresponding index of is array.
 
             string snw = " " + hats[arr[0]] +
-                         highs_Left[arr[4]] + "(" + left_Eye[arr[2]] + noses[arr[1]] + right_Eye[arr[3]] + ")" + high_Right[arr[5]] + "\n" +
+                         high_Left[arr[4]] + "(" + left_Eye[arr[2]] + noses[arr[1]] + right_Eye[arr[3]] + ")" + high_Right[arr[5]] + "\n" +
                          low_Left[arr[4]] + "(" + torso[arr[6]] + ")" + low_Right[arr[5]] + "\n (" +
                          base[arr[7]] + ")";
             return snw;
         }
     }
 }
+
 

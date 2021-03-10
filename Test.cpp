@@ -32,7 +32,7 @@ using namespace ariel;
 
 using namespace std;
 
-//I change the syntax of eras to feet with c++11
+//I changed the syntax of eras to feet with c++11
 string nospaces(string input)
 {
     input.erase(remove(input.begin(),input.end(), ' '), input.end());
